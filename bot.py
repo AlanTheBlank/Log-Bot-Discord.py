@@ -6,8 +6,8 @@ from itertools import cycle
 
 client = discord.Client(max_messages=100000, status=discord.Status.dnd)
 
-TOKEN = 'NTc0MzE5MTQyMjE2NDAwODk3.XM7gtg.H3uRmh89TX3yXF1Cg7jSE0QS3N8'
-log=574342893368639509
+TOKEN = 'INSET TOKEN HERE'
+log=INSERT LOG CHANNEL ID HERE
 
 @client.event
 async def on_ready():
