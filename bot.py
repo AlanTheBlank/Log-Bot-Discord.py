@@ -71,7 +71,7 @@ async def log_cleanup():
 
 async def bot_presence():
 	await client.wait_until_ready()
-	games = ["With the big, juicy CoC", "with Stu's emotions", "with EthernalBlue", "with discord URIs"]
+	games = [enter strings here]
 	msgs = cycle(games)
 	print("test")
 	while(True):
