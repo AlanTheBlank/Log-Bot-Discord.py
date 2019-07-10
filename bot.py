@@ -14,13 +14,6 @@ async def on_ready():
 	#indicates bot is live
 	print("My botty is ready")
 
-#This method logs the messages sent to a file, this is optional and may be removed if unnecessary
-@client.event
-async def on_message(message):
-	f = open("log.txt", "a+")
-	f.write(str(message.author) + " has said " + message.content + " in " + str(message.channel) + " at " + str(message.created_at) + "\n")
-	f.close()
-
 #This method logs messages deleted to the log channel specified above
 @client.event
 async def on_message_delete(message):
@@ -71,7 +64,7 @@ async def log_cleanup():
 
 async def bot_presence():
 	await client.wait_until_ready()
-	games = [enter strings here]
+	games = ["inset", "strings", "here"]
 	msgs = cycle(games)
 	print("test")
 	while(True):
